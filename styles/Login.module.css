@@ -3,3 +3,21 @@
 .fontUserLogin {
   font-family: 'Open Sans';
 }
+
+.xLoginOverflow {
+  overflow: hidden;
+}
+
+.topLeft {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  margin: 40px 80px;
+}

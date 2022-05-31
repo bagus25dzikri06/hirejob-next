@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.backgroundOpinion {
+  background-color: #E5E5E5;
+}
 
-.fontOpinion {
-  font-family: 'Open Sans';
+.imageOpinion {
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 20px #FBB017
 }

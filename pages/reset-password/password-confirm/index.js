@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Col, Form, Input, Row, Button, Container } from 'reactstrap'
-import styles from '../../styles/Login.module.css'
+import styles from '../../../styles/Login.module.css'
 
 export default function login() {
   return (
@@ -31,51 +31,31 @@ export default function login() {
             justifyContent: 'center',
             height: '100vh'
           }} className={styles.fontUserLogin}>
-            <h1 className='text-start'><b>Halo, Pewpeople</b></h1>
+            <h1 className='text-start'><b>Reset password</b></h1>
             <p className='text-start'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod ipsum et dui rhoncus auctor.
+              You need to change your password to activate your account.
             </p>
             <div className='text-start'>
               <Form>
                 <div className="form-outline mb-4" style={{
                   width: '45rem'
                 }}>
-                  <label className="form-label text-muted">E-mail</label>
-                  <Input type="email" id="email" className="form-control form-control-lg" placeholder="Masukkan Alamat E-mail"/>
+                  <label className="form-label text-muted">Kata Sandi</label>
+                  <Input type="email" id="email" className="form-control form-control-lg" placeholder="Masukkan kata sandi"/>
                 </div>
 
                 <div className="form-outline mb-4" style={{
                   width: '45rem'
                 }}>
-                  <label className="form-label text-muted">Kata Sandi</label>
-                  <Input type="password" id="password" className="form-control form-control-lg" placeholder="Masukkan Kata Sandi"/>
-                </div>
-
-                <div className="d-flex justify-content-end mb-2">
-                  <a href="/reset-password/email-confirm" className="text-body">Lupa kata sandi?</a>
+                  <label className="form-label text-muted">Konfirmasi Kata Sandi</label>
+                  <Input type="password" id="password" className="form-control form-control-lg" placeholder="Masukkan konfirmasi kata sandi"/>
                 </div>
 
                 <div className="d-flex justify-content-center">
                   <Button color='warning' className="col-11" style={{
                     color: '#FFFFFF'
-                  }}>Masuk</Button>
+                  }}>Reset Password</Button>
                 </div>
-
-                <p className="text-center text-muted mt-3 mb-0">
-                  Anda belum punya akun?
-                </p>
-
-                <p className="text-center text-muted mt-3 mb-0">
-                  <a href="/register/user" className="fw-bold text-body"><u style={{
-                    color: '#FBB017'
-                  }}>Daftar di sini sebagai Worker</u></a>
-                </p>
-
-                <p className="text-center text-muted mt-3 mb-0">
-                  <a href="/register/recruiter" className="fw-bold text-body"><u style={{
-                    color: '#FBB017'
-                  }}>Daftar di sini sebagai Recruiter</u></a>
-                </p>
               </Form>
             </div>
           </Col>

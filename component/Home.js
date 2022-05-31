@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Container, Row, Col } from 'reactstrap'
 import styles from '../styles/Welcome.module.css'
 
-export default function Welcome() {
+export default function Home() {
   return (
     <div>
       <section className="section position-relative">

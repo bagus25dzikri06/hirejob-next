@@ -1,16 +1,19 @@
-import Layout from "../component/Layout"
-import Welcome from "../component/Welcome"
-import Feature from "../component/Feature"
-import Opinion from "../component/Opinion"
-import MoreInformation from "../component/MoreInformation"
+import React from 'react'
+import Home from '../component/Home'
+import Feature from '../component/Feature'
+import Opinion from '../component/Opinion'
+import MoreInformation from '../component/MoreInformation'
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <Layout pageTitle='HireJob'>
-      <Welcome />
+    <div>
+      <Home />
       <Feature />
       <Opinion />
       <MoreInformation />
-    </Layout>
+    </div>
   )
 }
+
+HomePage.layout = 'L2'
+export default HomePage
